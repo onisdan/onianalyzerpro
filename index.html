@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONI Analyzer Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>ONI Analyzer Pro</h2>
+
+<button>Dashboard</button>
+
+<button>Market Scanner</button>
+
+<button>AI Analyzer</button>
+
+<button>Heatmap</button>
+
+<button>Signals</button>
+
+<button>Settings</button>
+
+</div>
+
+<div class="main">
+
+<div class="topbar">
+
+<h1>Deriv AI Analyzer</h1>
+
+<div class="status">
+
+<span class="online"></span>
+
+Connected
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Market</h3>
+
+<p id="marketName">Volatility 10 (1s)</p>
+
+</div>
+
+<div class="card">
+
+<h3>Prediction</h3>
+
+<h1 id="prediction">--</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Confidence</h3>
+
+<h1 id="confidence">0%</h1>
+
+</div>
+
+</div>
+
+<div class="chartBox">
+
+<canvas id="priceChart"></canvas>
+
+</div>
+
+<div class="scanner">
+
+<h2>AI Signal Scanner</h2>
+
+<button id="scanBtn">
+
+Scan Market
+
+</button>
+
+<div id="result">
+
+Waiting for scan...
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
